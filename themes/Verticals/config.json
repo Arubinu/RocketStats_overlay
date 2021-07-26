@@ -1,0 +1,9 @@
+{
+	"background_on_icons":	true,
+	"background_on_values":	true,
+	"display_rank":			true,
+	"fixed_size":			false,
+	"icons_reverse":		false,
+	"rank_reverse":			false,
+	"rank_vertical":		true
+}

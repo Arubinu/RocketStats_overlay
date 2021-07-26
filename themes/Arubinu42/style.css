@@ -1,0 +1,65 @@
+#container {
+	width: 576px;
+	height: 40px;
+	line-height: 42px;
+	background-image: url( './assets/background.png' );
+	opacity: .82;
+}
+
+#container.logo {
+	width: 622px;
+	background-position-x: 46px;
+}
+#container.floatingpoint {
+	width: 615px;
+	background-image: url( './assets/background-floatingpoint.png' );
+}
+#container.logo.floatingpoint {
+	width: 660px;
+}
+
+[file-static] {
+	margin-left: 4px;
+}
+[file-static="RocketLeague"] {
+	margin-right: 3px;
+	width: 42px !important;
+	height: 42px !important;
+	vertical-align: top !important;
+}
+#container:not(.logo) [file-static="RocketLeague"] {
+	display: none;
+}
+
+img[file-static],
+img[file-target] {
+	float: none;
+	vertical-align: 0px;
+}
+[file-target] {
+	display: inline-block;
+	color: #fff;
+}
+div[file-target] {
+	padding-right: 24px;
+	width: 88px;
+	font-family: sans-serif;
+	font-weight: bolder;
+	text-shadow: initial;
+	vertical-align: 4px;
+}
+
+[file-target="RocketStats_Rank"] {
+	margin-left: 45px;
+	transform: scale( 1.6 );
+}
+[file-target="RocketStats_MMR"] {
+	width: 156px !important;
+}
+#container:not(.floatingpoint) [file-target="RocketStats_MMR"] {
+	width: 116px !important;
+}
+
+[sign] {
+	color: #fff !important;
+}

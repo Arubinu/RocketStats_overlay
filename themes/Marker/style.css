@@ -1,0 +1,83 @@
+#container {
+	padding-top: 2px;
+	width: 346px;
+	height: 145px;
+	background-image: url( './assets/background.png' );
+	opacity: .98;
+	transform: scale( .75 );
+}
+
+[file-static],
+[file-target] {
+	float: none;
+	display: inline-block;
+	color: #fff;
+	border-radius: 5px;
+}
+
+div[file-target] {
+	font-size: 29px;
+	font-family: 'Azonix', sans-serif;
+	font-weight: bolder;
+	text-align: left;
+	text-shadow: initial;
+}
+
+
+[file-static="Streak_Plus"],
+[file-static="Streak_Minus"],
+[file-static="Streak_Default"] {
+	position: absolute;
+	top: 82px;
+	left: 0px;
+	right: 0px;
+	margin: auto !important;
+	width: 60px !important;
+	height: 10px !important;
+}
+[file-static="Streak_Plus"],
+[file-static="Streak_Minus"] {
+	width: 0px !important;
+}
+[file-static="Streak_Plus"] {
+	background-image: url( './assets/Streak_Plus.png' );
+}
+[file-static="Streak_Minus"] {
+	background-image: url( './assets/Streak_Minus.png' );
+}
+[file-static="Streak_Default"] {
+	background-image: url( './assets/Streak_Default.png' );
+}
+
+[file-target="RocketStats_Rank"] {
+	position: absolute;
+	top: 25px;
+	left: 0px;
+	right: 0px;
+	margin: auto;
+	transform: scale( 3.5 );
+	filter: drop-shadow(0px 0px 2px rgba( 255, 255, 255, .5 ));
+	opacity: .2;
+}
+[file-target="RocketStats_MMRChange"] {
+	font-size: 20px !important;
+	font-style: italic;
+	font-weight: normal !important;
+	vertical-align: 4px;
+}
+[file-target="RocketStats_Streak"] {
+	display: none;
+}
+
+.mmrwchange {
+	position: absolute;
+	top: 104px;
+	left: 0px;
+	right: 0px;
+	text-align: center;
+	opacity: .9;
+}
+
+[sign] {
+	color: #fff !important;
+}

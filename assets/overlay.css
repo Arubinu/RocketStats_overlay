@@ -1,0 +1,76 @@
+@font-face {
+	font-family: 'Azonix';
+	src: url( './Azonix.otf' ) format( 'opentype' );
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body.hide #container {
+	display: none;
+}
+
+#container {
+	position: relative;
+	width: 300px;
+	background-repeat: no-repeat;
+}
+
+.mmrwchange {
+	text-align: right;
+}
+.mmrwchange > * {
+	display: inline-block;
+}
+
+div[file-target] {
+	margin-bottom: 14px;
+	font-family: courier;
+	font-size: 28px;
+	text-align: right;
+	text-shadow: 1px 1px 0px #000;
+	color: #fff;
+}
+
+img[file-static],
+img[file-target] {
+	float: left;
+	width: 28px;
+	height: 28px;
+}
+
+[file-target="RocketStats_GameMode"] {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 272px;
+	word-break: break-all;
+	white-space: nowrap;
+}
+[file-target="RocketStats_Rank"] {
+	transform: scale( 1.4 );
+}
+[file-target="RocketStats_MMR"] {
+}
+[file-target="RocketStats_MMRChange"]::before {
+	content: '(';
+	margin-left: 8px;
+}
+[file-target="RocketStats_MMRChange"]::after {
+	content: ')';
+}
+
+[sign="plus"]:not([file-target="RocketStats_MMR"]):not([file-target="RocketStats_MMRChange"]) {
+	color: #0f0;
+}
+[sign="minus"]:not([file-target="RocketStats_MMR"]):not([file-target="RocketStats_MMRChange"]) {
+	color: #f00;
+}
+[file-target="RocketStats_Loose"][sign="plus"]:not([file-target="RocketStats_MMR"]):not([file-target="RocketStats_MMRChange"]) {
+	color: #f00;
+}

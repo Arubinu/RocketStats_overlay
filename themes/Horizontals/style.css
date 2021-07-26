@@ -1,0 +1,73 @@
+#container {
+	padding-top: 2px;
+	width: 218px;
+	height: 192px;
+	opacity: .8;
+}
+
+[file-static],
+[file-target] {
+	float: none;
+	display: inline-block;
+	margin: 5px;
+	margin-top: 3px;
+	padding: 5px;
+	width: 40px !important;
+	color: #fff;
+	border-radius: 5px;
+}
+#container.icons [file-static],
+#container.values [file-target] {
+	background-color: rgba( 0, 0, 0, .8 );
+}
+[file-static] {
+	width: 40px !important;
+	height: 40px !important;
+}
+[file-static="Separator"] {
+	display: block;
+	margin: initial;
+	padding: initial;
+	width: 100% !important;
+	height: 0px !important;
+	background-color: initial !important;
+}
+
+div[file-target] {
+	margin-bottom: 6px;
+	padding-top: 8px;
+	padding-bottom: 2px;
+	padding-left: 7px;
+	padding-right: 8px;
+	width: initial !important;
+	font-family: 'Azonix', sans-serif;
+	font-weight: bolder;
+	text-align: left;
+	text-shadow: initial;
+}
+#container.fixed div[file-target] {
+	width: 158px !important;
+}
+
+[file-target="RocketStats_Rank"] {
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	margin-top: calc( 50% - ( 100px / 2 ) );
+	width: 100px !important;
+	height: 100px !important;
+	background-color: initial !important;
+}
+#container:not(.right) {
+	margin-left: 110px;
+}
+#container:not(.right) [file-target="RocketStats_Rank"] {
+	left: -110px;
+}
+#container.right [file-target="RocketStats_Rank"] {
+	right: -110px;
+}
+
+[sign] {
+	color: #fff !important;
+}
