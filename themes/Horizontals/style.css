@@ -34,7 +34,7 @@
 }
 
 div[file-target] {
-	margin-bottom: 6px;
+	margin-bottom: 7px;
 	padding-top: 8px;
 	padding-bottom: 2px;
 	padding-left: 7px;
@@ -53,7 +53,7 @@ div[file-target] {
 	position: absolute;
 	top: 0px;
 	bottom: 0px;
-	margin-top: calc( 50% - ( 100px / 2 ) );
+	margin-top: calc( 50% - ( 100px / 2 ) - 10px );
 	width: 100px !important;
 	height: 100px !important;
 	background-color: initial !important;
