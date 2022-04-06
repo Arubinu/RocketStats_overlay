@@ -1,4 +1,4 @@
-# Overlay4RocketStats
+# RocketStats_overlay
 
 Easily add an overlay to your OBS scene using only a Browser source.
 
