@@ -13,7 +13,7 @@ To work, you need to install the following dependencies:
 ## Installation
 
 For the overlay to work, it must be placed in a particular location.
-The `RocketStats_overlay` folder should be copied to the following path: `%appdata%\bakkesmod\bakkesmod\RocketStats`.
+The `RocketStats_overlay` folder should be copied to the following path: `%appdata%\bakkesmod\bakkesmod\data\RocketStats`.
 
 Now add a Browser source to your scene, check the local file option, and give the path of the `RocketStats_overlay\overlay.html` file of the previously copied folder.
 
