@@ -5,7 +5,7 @@ sort = [
 	'RocketStats_MMR',
 	'RocketStats_Streak',
 	'RocketStats_Win',
-	'RocketStats_Loose'
+	'RocketStats_Loss'
 ];
 
 if ( getOption( 'display_rank' ) )

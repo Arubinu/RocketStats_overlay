@@ -7,7 +7,7 @@ sort = [
 	'RocketLeague',
 	'RocketStats_Rank',	'RocketStats_MMR',
 	'Icon_Win',			'RocketStats_Win',
-	'Icon_Loose',		'RocketStats_Loose',
+	'Icon_Loss',		'RocketStats_Loss',
 	'Icon_Streak',		'RocketStats_Streak'
 ];
 

@@ -8,7 +8,7 @@ sort = [
 	'Separator',
 	'Icon_Win',		'RocketStats_Win',
 	'Separator',
-	'Icon_Loose',	'RocketStats_Loose',
+	'Icon_Loss',	'RocketStats_Loss',
 	'Separator',
 	'Icon_Streak',	'RocketStats_Streak'
 ];
@@ -20,7 +20,7 @@ if ( getOption( 'align_on_right' ) )
 		'Separator',
 		'RocketStats_Win',		'Icon_Win',
 		'Separator',
-		'RocketStats_Loose',	'Icon_Loose',
+		'RocketStats_Loss',	'Icon_Loss',
 		'Separator',
 		'RocketStats_Streak',	'Icon_Streak'
 	];

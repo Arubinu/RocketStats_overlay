@@ -4,9 +4,6 @@ let theme = '';
 let mmrwchange = true;
 let occasionnal = '';
 
-// Detects if the overlay is launched from the server
-const is_http = ( window.location.protocol == 'http:' );
-
 // Read the options added in the page address
 let options = {};
 for ( let option of window.location.search.substring( 1 ).split( '&' ) )
@@ -25,7 +22,7 @@ let sort = [
 	'RocketStats_Rank',	'RocketStats_GameMode',
 	'Icon_MMR',			'RocketStats_MMR',		'RocketStats_MMRChange',
 	'Icon_Win',			'RocketStats_Win',
-	'Icon_Loose',		'RocketStats_Loose',
+	'Icon_Loss',		'RocketStats_Loss',
 	'Icon_Streak',		'RocketStats_Streak'
 ];
 
@@ -33,7 +30,7 @@ let sort = [
 let files = {
 	'Icon_MMR': { static: true, type: 'img', attributes: { src: './assets/mmr.png' } },
 	'Icon_Win': { static: true, type: 'img', attributes: { src: './assets/win.png' } },
-	'Icon_Loose': { static: true, type: 'img', attributes: { src: './assets/loose.png' } },
+	'Icon_Loss': { static: true, type: 'img', attributes: { src: './assets/loss.png' } },
 	'Icon_Streak': { static: true, type: 'img', attributes: { src: './assets/streak.png' } },
 	'RocketStats_GameMode': { default: '' },
 	'RocketStats_Rank': { type: 'img', default: 'Unranked', value: '', update: ( file, content, init ) => {
@@ -265,7 +262,7 @@ function initOverlay()
 // Updates the elements with the "file-target" attribute (which corresponds to the text file to read)
 function updateOverlay( init )
 {
-	if ( is_http )
+	if ( options.with_server )
 	{
 		if ( init )
 			socketConnect();

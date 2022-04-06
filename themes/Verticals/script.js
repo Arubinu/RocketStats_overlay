@@ -6,14 +6,14 @@ mmrwchange = false;
 sort = [
 	'RocketStats_MMR',
 	'RocketStats_Win',
-	'RocketStats_Loose',
+	'RocketStats_Loss',
 	'RocketStats_Streak'
 ];
 
 if ( getOption( 'icons_reverse' ) )
-	sort = sort.concat( [ 'Separator', 'Icon_MMR', 'Icon_Win', 'Icon_Loose', 'Icon_Streak' ] );
+	sort = sort.concat( [ 'Separator', 'Icon_MMR', 'Icon_Win', 'Icon_Loss', 'Icon_Streak' ] );
 else
-	sort = [ 'Icon_MMR', 'Icon_Win', 'Icon_Loose', 'Icon_Streak', 'Separator' ].concat( sort );
+	sort = [ 'Icon_MMR', 'Icon_Win', 'Icon_Loss', 'Icon_Streak', 'Separator' ].concat( sort );
 
 if ( getOption( 'display_rank' ) )
 	sort.unshift( 'RocketStats_Rank' );
