@@ -71,6 +71,6 @@ img[file-target] {
 [sign="minus"]:not([file-target="RocketStats_MMR"]):not([file-target="RocketStats_MMRChange"]) {
 	color: #f00;
 }
-[file-target="RocketStats_Loose"][sign="plus"]:not([file-target="RocketStats_MMR"]):not([file-target="RocketStats_MMRChange"]) {
+[file-target="RocketStats_Loss"][sign="plus"]:not([file-target="RocketStats_MMR"]):not([file-target="RocketStats_MMRChange"]) {
 	color: #f00;
 }
