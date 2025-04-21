@@ -39,7 +39,21 @@ let files = {
 				return ;
 
 			file.last = value;
-			file.elem.src = `../RocketStats_images/${value || file.default}.png`;
+			let rankValue = (value || file.default).trim();
+
+			// Convert Latin numbers to Romen numbers
+			const romanMap = {
+  			'1': 'I',
+    		'2': 'II',
+    		'3': 'III',
+    		'4': 'IV'
+			};
+			rankValue = rankValue.replace(/(\d+)/, (_, num) => romanMap[num] || num);
+
+			// Convert spaces to underscore
+			rankValue = rankValue.replace(/\s+/g, '_');
+			
+			file.elem.src = `../RocketStats_images/${rankValue}.png`;
 		};
 
 		if ( init )
