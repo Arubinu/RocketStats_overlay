@@ -67,6 +67,22 @@ div[file-target] {
 	right: 12px;
 	transform: scale( 2 );
 }
+
+[file-target="RocketStats_Rank"].boost {
+	position: absolute !important;
+	bottom: 130px;
+	right: -100px;
+	transform: scale( 6 );
+	opacity: 0.5;
+}
+
+[file-target="RocketStats_Rank"].side {
+	position: absolute !important;
+	bottom: 130px;
+	right: 300px;
+	transform: scale( 2 );
+}
+
 [file-target="RocketStats_MMR"] {
 	margin-bottom: 4px !important;
 	line-height: 57px !important;
